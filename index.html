@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SkyCast</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="rain"></div>
+
+<div class="app">
+
+  
+  <div class="topbar">
+    <h2>🌦 SkyCast</h2>
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search city...">
+      <button id="searchBtn">🔍</button>
+    </div>
+  </div>
+
+  
+  <div class="dashboard">
+
+  
+    <div class="main-card">
+      <h2 id="city">--</h2>
+      <img id="mainIcon">
+      <h1 id="temp">--°</h1>
+      <p id="condition">---</p>
+
+      <div class="stats">
+        <div>Feels: <span id="feels"></span>°</div>
+        <div>Humidity: <span id="humidity"></span>%</div>
+        <div>Wind: <span id="wind"></span></div>
+        <div>Pressure: <span id="pressure"></span></div>
+      </div>
+    </div>
+
+  
+    <div class="side">
+
+      <div class="card">
+        <h3>Hourly</h3>
+        <div id="hourly"></div>
+      </div>
+
+      <div class="card">
+        <h3>5 Days</h3>
+        <div id="forecast"></div>
+      </div>
+      <div class="card">
+        <h3>Temperature Trend</h3>
+        <canvas id="tempChart"></canvas>
+      </div>
+      <div class="card">
+        <h3>🌍 World Weather</h3>
+        <div id="worldWeather"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html> 
